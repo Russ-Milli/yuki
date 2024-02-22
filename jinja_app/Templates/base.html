@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{%block title %} Safari Mid Morning {% endblock %}</title>
+
+</head>
+<body>
+<header>
+    <h1>{% block header %} Welcome to Safari Lab{% endblock %}</h1>
+<nav>
+
+    <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+    </ul>
+
+</nav>
+
+</header>
+<main>
+    {% block content %}{% endblock %}
+
+
+{#<p>This is my homepage</p>#}
+
+
+ <footer><p>&copy; 2024 Safari Lab</p></footer>
+</main>
+</body>
+</html>
